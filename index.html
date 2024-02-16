@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Olga Efimova" />
+    <meta name="description" content="This is main page." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Твой позитивный фотограф</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="flex-headerContainer">
+        <div class="flex-headerItem">
+          <h3 class="header"><i>Любовь Муравьева</i></h3>
+          <h4 class="header" id="header2"><i>Позитивный фотограф</i></h4>
+        </div>
+        <div class="flex-headerItem">
+          <ul id="topnav">
+            <li class="navLi"><a href="#about" class="active">Обо мне</a></li>
+            <li class="navLi"><a href="#price">Услуги и цены</a></li>
+            <li class="navLi"><a href="#contacts">Контакты</a></li>
+
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Портфолио</a>
+              <div class="dropdown-content">
+                <a href="newyear.html">Новый год</a>
+                <a href="family.html">Семейная сьемка</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <main>
+      <article id="about">
+        <div class="flex-container">
+          <div class="flex-item" id="flex1">
+            <h5><b>Добрый день!</b></h5>
+            <p>Меня зовут Любовь и я работаю фотографом в Нижнем Новгороде.</p>
+            <p>
+              Обратившись ко мне, будьте уверены, что получите фотографии
+              отличного качества. Я индивидуально подхожу к каждому клиенту и
+              стараюсь прислушаться ко всем пожеланиям.
+            </p>
+            <p>
+              У меня свой взгляд на процесс съёмки, я не буду заставлять вас по
+              долгу позировать и находится в неудобных позах. В основном я отдаю
+              приоритет репортажном виду, и поэтому съемка со мной пройдет легко
+              и не принуждено!
+            </p>
+            <p>
+              Я искренне заинтересована в создании вышей истории! Напишите мне
+              что бы забронировать свою дату прямо сейчас.
+            </p>
+
+            <a href="https://vk.com/lubov_mur" class="nubex">Написать</a>
+          </div>
+
+          <div class="flex-item" id="flex2">
+            <img src="img/logo.jpg" alt="logo" />
+          </div>
+        </div>
+      </article>
+
+      <article id="price">
+        <hr />
+        <h5><b>Услуги и цены</b></h5>
+
+        <div class="flex-price">
+          <table id="priceTable">
+            <thead>
+              <tr>
+                <th>Экспресс-фотосессия</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <ul>
+                    <li>Длительность 20 минут</li>
+                    <li>15 фото</li>
+                    <li>Готовые фото через 5 дней</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th>1000 р</th>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="priceTable">
+            <thead>
+              <tr>
+                <th>Почасовая фотосессия</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <ul>
+                    <li>Длительность от 1 часа</li>
+                    <li>Цвето- и свето-коррекция всех фото</li>
+                    <li>Срок изготовления до 2 недель</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th>4000 р/час</th>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="priceTable">
+            <thead>
+              <tr>
+                <th>Фотопроект</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <ul>
+                    <li>Съемка с реквизитом</li>
+                    <li>Длительность 30 минут</li>
+                    <li>Срок изготовления до 2 недель</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th>от 1500 р</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <article id="contacts">
+        <h5><b>Контакты</b></h5>
+
+        <h5>Удобный способ связи</h5>
+        <label class="container"
+          >Телефон
+          <input type="radio" checked="checked" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >Почта
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >Viber
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </article>
+    </footer>
+  </body>
+</html>
