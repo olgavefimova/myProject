@@ -6,7 +6,9 @@
     <meta name="description" content="Family fotos." />
     <title>Семейная сьемка</title>
     <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--   <link rel="stylesheet" href="styles/main.css" type="text/css" /> -->
+    <link rel="stylesheet" href="styles/family.css" type="text/css" />
   </head>
 
   <header>
@@ -19,20 +21,40 @@
         <a href="index.html">На главную</a>
       </div>
     </div>
-  </header>
-  <body>
     <hr />
-    <article id="examples">
-      <p><b>Семейная сьемка</b></p>
+  </header>
 
-      <div class="list">
-        <div><img src="img/1.jpg" alt="" /></div>
-        <div><img src="img/2.jpg" alt="" /></div>
-        <div><img src="img/3.jpg" alt="" /></div>
-        <div><img src="img/4.jpg" alt="" /></div>
-        <div><img src="img/6.jpg" alt="" /></div>
-        <div><img src="img/8.jpg" alt="" /></div>
+  <body>
+    <div class="container">
+      <h1>Семейная съёмка</h1>
+
+      <div class="img-conteiner">
+        <div class="img">
+          <img src="img/family/1.jpg" alt="img1" />
+        </div>
+        <div class="img">
+          <img src="img/family/2.jpg" alt="img2" />
+        </div>
+        <div class="img">
+          <img src="img/family/3.jpg" alt="img3" />
+        </div>
+        <div class="img">
+          <img src="img/family/4.jpg" alt="img4" />
+        </div>
+        <div class="img">
+          <img src="img/family/6.jpg" alt="img5" />
+        </div>
+        <div class="img">
+          <img src="img/family/8.jpg" alt="img6" />
+        </div>
       </div>
-    </article>
+
+      <div class="pop-up">
+        <img src="img/family/4.jpg" alt="" />
+        <span>&times;</span>
+      </div>
+    </div>
+
+    <script src="script/family.js"></script>
   </body>
 </html>

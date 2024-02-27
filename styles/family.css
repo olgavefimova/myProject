@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+* {
+  margin: 0.1vw;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+.header {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.flex-headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: peachpuff;
+  font-family: "Pangolin", cursive;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+
+.container .img-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container .img-conteiner .img {
+  width: 450px;
+  height: 300px;
+  border: 10px solid #333;
+  overflow: hidden;
+}
+
+.container .img-conteiner .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 100% auto;
+}
+
+.container .img-conteiner .img:hover img {
+  transform: scale(1.2);
+}
+
+.container .pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.container .pop-up img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #333;
+  border-radius: 8px;
+  width: 700px;
+}
+
+.pop-up span {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container .pop-up img {
+    width: 90vw;
+  }
+
+  .container .img-conteiner .img {
+    width: 95vw;
+    height: auto;
+  }
+}
